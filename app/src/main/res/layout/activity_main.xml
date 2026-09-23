@@ -3,43 +3,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="24dp">
-
-    <TextView
-        android:id="@+id/txtTitulo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="PROYECTO GRUPO 10"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/txtSubtitulo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Seleccione una pregunta"
-        android:textSize="18sp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/btnPregunta7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="PREGUNTA 7"
-        app:layout_constraintTop_toBottomOf="@id/txtSubtitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    android:layout_height="match_parent">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,14 +13,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         val btnPregunta7 = findViewById<Button>(R.id.btnPregunta7)
+        val btnPregunta6 = findViewById<Button>(R.id.btnPregunta6)
 
         btnPregunta7.setOnClickListener(this)
+        btnPregunta6.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
 
         if (v?.id == R.id.btnPregunta7) {
             val intent = Intent(this, Pregunta7Activity::class.java)
+            startActivity(intent)
+        }
+        else if (v?.id == R.id.btnPregunta6) {
+            val intent = Intent(this, Pregunta6Activity::class.java)
             startActivity(intent)
         }
     }

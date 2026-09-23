@@ -1,56 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="26dp">
 
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="PROYECTO GRUPO 10"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_height="120dp"
         android:gravity="center"
+        android:text="Kilometraje excedente en alquiler"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/txtSubtitulo"
-        android:layout_width="0dp"
+        android:id="@+id/txtEtiqueta"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Seleccione una pregunta"
+        android:layout_marginTop="20dp"
+        android:text="Kilómetros recorridos:"
         android:textSize="18sp"
-        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/txtTitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnPregunta7"
+    <EditText
+        android:id="@+id/txtKilometros"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="PREGUNTA 7"
-        app:layout_constraintTop_toBottomOf="@id/txtSubtitulo"
+        android:layout_marginTop="8dp"
+        android:hint="Ingrese los kilómetros"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/txtEtiqueta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btnPregunta6"
+        android:id="@+id/btnCalcular"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/textbtnpregunta6"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="CALCULAR"
+        app:layout_constraintTop_toBottomOf="@id/txtKilometros"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPregunta7" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
